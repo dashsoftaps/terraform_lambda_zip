@@ -3,7 +3,7 @@ variable "name" {
 }
 
 variable "project_path" {
-  description = "path to the function"
+  description = "path to the function directory"
 }
 
 variable "output_path" {
@@ -20,4 +20,9 @@ variable "runtime" {
 variable "requirements_file" {
   default     = ""
   description = "the path to the requirements file. Can be empty."
+}
+
+variable "lib_path" {
+  default     = ""
+  description = "path to common python files directory"
 }

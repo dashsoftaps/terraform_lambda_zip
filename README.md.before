@@ -4,12 +4,7 @@ This is a Terraform module implements the necessary moving parts to take a path 
 
 It _requires_ that you have the following packages installed:
 
- - `jq`
- - `pyenv`
- - `openssl`
- - BSD `md5`
- - `python2.7` and `python3.6`, selectable via `pyenv`
- - `virtualenv`, in the selected python runtime, installed via `pip`
+ - Python 3.6
  - `terraform` v0.11.2 or higher. This project _may_ be usable with lower, but it is _untested._
 
 ## How It Works

@@ -1,16 +1,15 @@
 output "path" {
-  value = "${var.output_path}/${var.name}_${data.external.payload_exists.result["identifier"]}_payload.zip"
+  value = "${data.external.payload_sha.result["path"]}"
 }
 
 output "filename" {
-  value = "${var.name}_${data.external.payload_exists.result["identifier"]}_payload.zip"
+  value = "${data.external.payload_sha.result["filename"]}"
 }
 
 output "sha256" {
-  value = "${data.external.payload_sha.result["sha"]}"
+  value = "${data.external.payload_sha.result["sha256"]}"
 }
 
 output "md5" {
   value = "${data.external.payload_sha.result["md5"]}"
 }
-
